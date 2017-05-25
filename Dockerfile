@@ -1,14 +1,15 @@
 FROM ekellener/manifest-tool
 
+RUN apt-get update && apt-get install vim -y
 
-# ./manifest-tool --username ekellener --password dRFk7R4lfd push  from-spec manifest-test.yml 
 RUN  cd $GOPATH/src && \
 mkdir -p github.com/estesp && \
 cd github.com/estesp 
 
 RUN  git clone https://github.com/estesp/manifest-tool .
 RUN  make binary
-COPY manifest-btsync-docker.yml manifest-test.yml
+COPY post_manifest.sh post_manifest.sh
 
-RUN apt-get update && apt-get install vim -y
+
+ENTRYPOINT ["/bin/bash", "post_manifest.sh"]
 
