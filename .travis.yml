@@ -1,9 +1,5 @@
 services:
   - docker
-language: go
-go:
-- '1.0'
-- '1.3'
 env:
   global:
   - secure: loHoWxFbD+jmpH53aMX4cCVSVcnQpt+RZJJk3xihvNyhIYwDv7GmANpoevVp8kTqypSchM5Cv2rJtgymuF3TJntTH59sa0MDWi+WNIsf4wcvOysm55ONpNc3dw/FQQoxikZmpNE0EYyeHnCkPxPtgnM+xkt+Mh4Kx4a6SrCyAGCK9HBgDDrx/SwJQAgDUYrLWes6OIM7ru7PUj3wWhfIVhVtzpQB6U0Nrtjhz+WWI2z/MsEnX6/c4SQ3z/8+B+Ci3dW4J2jCCkAhp17JqbTt3tGELNG5ErSnFyuzD70FUg2etGWcymarKOVRk01wvhibYoohm8ZShHwXbaGCMJ1R2qjV3G2+BjRUEPWUUjuuUUagsMN4uZF2AyI2hbcBdjUR6jRGrkVL4mZbar0/hb4sTWzfgpmmWtyNRStMiVCGN7RLSkGrbYEbivQQT/j2O5jQAVL4snJ3y1pjpMGvWDTeANstexk+Br4/NNLT996Dd+b7n7QFKwsVrMAhdWUi+7444eXpSVXiBjkbOHZhz89aDPHjz9f6LhhET8Zov/ZLFkzVWJRksE4Lx3qKVEKlMkyGFeGHWOXWowXVc1jtzGDB2YMq3PBRQsvInrvFLAx8sOsittUl8253kbKhuI3km6ZKvjxmuPQQMtpUDCneS6JAomdEqSx3blXywH6awVj4tX4=
