@@ -15,12 +15,5 @@ env:
 script:
   - docker ps | grep -q manifest-tool-build
 
-install: docker run -d \
-  	-e docker_username="ekellener" \
- 	-e docker_password="Dsc@m27" \
- 	-e manifest_platforms="linux/arm,linux/amd64" \
- 	-e manifest_template="ekellener/btsync-docker-ARCH" \
- 	-e manifest_target="ekellener/btsync-docker-multi"  \
-        --name manifest-tool-build manifest-tool-build
- 	ekellener/manifest-tool-build
+install: docker run -d  -e docker_username=$docker_username -e docker_password=$docker_password -e manifest_platforms="linux/arm,linux/amd64" -e manifest_template="ekellener/btsync-docker-ARCH" -e manifest_target="ekellener/btsync-docker-multi"  --name manifest-tool-build manifest-tool-build ekellener/manifest-tool-build
 
